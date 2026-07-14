@@ -1,8 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
   const menuItems = [
     { path: '/dashboard', name: 'Dashboard' },
     { path: '/customers', name: 'Customers' },
@@ -12,6 +14,15 @@ const Sidebar = () => {
     { path: '/expenses', name: 'Expenses' },
     { path: '/reports', name: 'Reports' },
   ];
+
+  // --- LOGOUT FUNCTION ---
+  const handleLogout = () => {
+    // 1. Throw away the VIP wristband (delete token)
+    localStorage.removeItem('token');
+    
+    // 2. Kick the user back to the login screen
+    navigate('/login');
+  };
 
   return (
     <div className="sidebar">
@@ -30,6 +41,13 @@ const Sidebar = () => {
             {item.name}
           </NavLink>
         ))}
+      </div>
+
+      {/* NEW: Logout Button pushed to the bottom */}
+      <div className="sidebar-footer">
+        <button className="btn-logout" onClick={handleLogout}>
+          ← Log Out
+        </button>
       </div>
     </div>
   );

@@ -54,3 +54,30 @@
   background-color: #118a8b;
   color: #ffffff;
 }
+
+/* --- LOGOUT BUTTON STYLES --- */
+.sidebar-footer {
+  margin-top: auto; /* This pushes the footer to the very bottom */
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-logout {
+  width: 100%;
+  background: transparent;
+  color: #8da4aa;
+  border: 1px solid #8da4aa;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.btn-logout:hover {
+  background: rgba(217, 83, 79, 0.1); /* Slight red tint on hover */
+  color: #d9534f;
+  border-color: #d9534f;
+}
