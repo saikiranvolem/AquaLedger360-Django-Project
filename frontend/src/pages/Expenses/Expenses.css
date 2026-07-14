@@ -1,0 +1,221 @@
+/* Container & Header */
+.page-container {
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between; /* Pushes the button to the right */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.user-info {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: #118a8b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0e7576;
+}
+
+/* Summary Grid */
+.summary-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.summary-box {
+  background-color: white;
+  flex: 1;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.border-orange { border-left: 4px solid #e67e22; }
+.border-blue { border-left: 4px solid #2980b9; }
+.border-teal { border-left: 4px solid #118a8b; }
+
+.summary-box p {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.summary-box h3 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+
+.summary-box span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Table */
+.table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.02);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #e0f2f1;
+  color: #555;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+td {
+  font-size: 14px;
+  color: #333;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+/* Bottom Info Card */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.info-card {
+  background-color: #e0f2f1;
+  padding: 20px 25px;
+  border-radius: 8px;
+  color: #116970;
+}
+
+.info-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Modal Popup Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.form-group-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.form-group-block label {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group-block input,
+.form-group-block select {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group-block input:focus,
+.form-group-block select:focus {
+  border-color: #118a8b;
+}
+
+.form-row-split {
+  display: flex;
+  gap: 15px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn-cancel {
+  background-color: #f5f5f5;
+  color: #555;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-cancel:hover {
+  background-color: #e8e8e8;
+}

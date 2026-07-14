@@ -1,0 +1,124 @@
+/* Inherits .page-container and standard table styles from our general layout */
+
+.details-header {
+  margin-bottom: 15px;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: #118a8b;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Profile Banner */
+.profile-banner {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.02);
+  margin-bottom: 20px;
+}
+
+.customer-name {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.customer-meta {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.badge-danger {
+  background-color: #d32f2f;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Summary Grid */
+.summary-grid {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.summary-box {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+/* The colored stripes on the left of the cards */
+.border-orange { border-left: 4px solid #e67e22; }
+.border-teal { border-left: 4px solid #118a8b; }
+.border-green { border-left: 4px solid #27ae60; }
+.border-blue { border-left: 4px solid #2980b9; }
+
+.summary-box p {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.summary-box h3 {
+  margin: 0 0 5px 0;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+
+.summary-box span {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #118a8b;
+  border-color: #118a8b;
+  color: white;
+}
+
+/* Bottom Action */
+.bottom-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
